@@ -1,6 +1,5 @@
 @echo off
 
-echo System File Checker
 
 :begin
 set /p response1= "Memtest launch? (Y/N)"
