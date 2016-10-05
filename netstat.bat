@@ -15,6 +15,7 @@ goto begin
 
 :start
 
+clear
 netstat -ano
 
 goto begin
