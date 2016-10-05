@@ -4,7 +4,7 @@ while [ 1 ] ;
  for ip in `lsof -ni | grep httpd | grep -iv listen | awk '{print $8
 }' | cut -d : -f 2 | sort | uniq | sed s/"http->"//` ;
  # the line above gets the list of all connections and connection
-attempts, and produces a list of uniq IPs
+ # attempts, and produces a list of uniq IPs
  # and iterates through the list
   do
     noconns=`lsof -ni | grep $ip | wc -l`;
